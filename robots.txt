@@ -1,0 +1,15 @@
+User-Agent: *
+Disallow: /account.php
+Disallow: /contactus.php
+Disallow: /GoogleSearch.php
+Disallow: /blogrequest.php
+Disallow: /login.php
+Allow: /
+Allow: /.
+
+User-Agent: Mediapartners-Google
+Allow: /.
+
+User-Agent: Adsbot-Google
+Allow: /.
+

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="includes/style.css" type="text/css" />
+    <link rel="stylesheet" href="includes/allsite.css" type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    @*<script type="text/javascript" src="includes/wtooltip.min.js"></script>*@
+    <script type="text/javascript" src="includes/ie6fixes.js"></script>
+    <script type="text/javascript" src="includes/allsite.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="Lessthandot is a site where computer professionals help each other." />
+    <meta name="keywords" content="Blog,Wiki,Forum,Lessthandot,Professionals,IT,Computers,Software,Hardware" />
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0 - Announcements and info" href="rss.php" />
+    <title>@Page.Title</title>
+
+    @*Facebook*@
+	<script  type="text/javascript">function fbs_click(u,t) {window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&amp;t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;}</script>
+    @*Twitter*@
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+
+    <style>
+        .disabled {
+            text-decoration: line-through !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="contain">
+        <div id="subcontain">
+            <div id="ttl">
+		        <div id="hdr">
+	                <div id="snav">Login Not Available</div>
+                    <a href="/" title="LessThanDot Outage Site" id="logoc"><img src="images/logo.png" alt="LessThanDot Site Logo"/></a>
+                    <h1>LessThanDot</h1>
+                    <div class="pgsttl">Our Server is Missing</div>
+                </div>
+
+                <div id="nav">
+	                <ul>
+                        <li><a href="/" title="Home" id="h"><span>Home</span></a></li>
+                        <li><a href="#" title="Blog Missing" id="b" class="disabled">Blog</a></li>
+                        <li><a href="#" title="Forum Missing" id="f" class="disabled">Forum</a></li>
+                        <li><a href="#" title="Wiki Missing" id="w" class="disabled">Wiki</a></li>
+                        <li><a href="#" title="SQLCop Missing" id="a" class="disabled">SQLCop</a></li>
+                        <li><a href="#" title="Registration Missing" id="r" class="disabled">Account</a></li>
+                    </ul>
+                </div>
+	        </div>
+
+            <div>
+
+            @RenderBody()
+
+            </div>
+	        <div id="page-footer">
+                <div id="botnav">
+	                <a href="/" title="Home">Home</a> | 
+            	    <a href="#" title="Register Disabled" class="disabled">Register</a> |
+	                <a href="#" title="Statistics Disabled" class="disabled">Statistics</a> |
+                    <a href="#" title="Donate Disabled" class="disabled">Donate</a> |
+	                <a href="#" title="Contact Us Disabled" class="disabled">Contact Us</a> |
+	                <a href="#" title="About Us">&copy;2013 LessThanDot, LLC</a>
+	            </div>
+	            <div class="validator"><a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate the CSS for this page at the W3C website">Valid CSS</a> | version: 2013-08-24</div>
+	        </div>
+        </div>
+    </div>
+    @*Google Plus One*@
+    <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+    @*Google Analytics*@
+    <script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+			var pageTracker = _gat._getTracker("UA-4471405-1");
+			pageTracker._initData();
+			pageTracker._trackPageview();
+			</script>
+</body>
+</html>
