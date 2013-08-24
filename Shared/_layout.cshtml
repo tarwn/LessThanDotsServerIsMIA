@@ -23,6 +23,36 @@
         .disabled {
             text-decoration: line-through !important;
         }
+        #content {
+            min-height:  400px;
+        }
+
+        h2 {
+            margin: .5em 0;
+            
+        }
+        
+        /* copied from CSS Tricks post here: http://css-tricks.com/snippets/css/text-rotation/    */
+        .rotate {
+            /* Safari */
+            -webkit-transform: rotate(-90deg);
+
+            /* Firefox */
+            -moz-transform: rotate(-90deg);
+
+            /* IE */
+            -ms-transform: rotate(-90deg);
+
+            /* Opera */
+            -o-transform: rotate(-90deg);
+
+            /* Internet Explorer */
+            filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        }
+
+        .n {
+            margin: 5px 0 0 -8px;        
+        }
     </style>
 </head>
 <body>
@@ -48,7 +78,7 @@
                 </div>
 	        </div>
 
-            <div>
+            <div id="content">
 
             @RenderBody()
 
